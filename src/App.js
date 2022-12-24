@@ -11,6 +11,12 @@ function App() {
     const onClickMinus = () => {
         setCount(count - 1);
     }
+    const onClickReset = () => {
+        if(count!=0)
+        {
+            setCount(0);
+        }
+    }
   return (
       <div className="App">
         <div>
@@ -18,6 +24,7 @@ function App() {
           <h1>{count}</h1>
           <button onClick={onClickMinus} className="minus">- Минус</button>
           <button onClick={onClickPlus} className="plus">Плюс +</button>
+            <button onClick={onClickReset} className="reset">Сбросить</button>
         </div>
       </div>
   );
