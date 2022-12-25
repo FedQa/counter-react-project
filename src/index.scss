@@ -58,11 +58,15 @@ body {
       box-shadow: 0 4px 0 darken(#2a9d8f, 10%);
       border: 1px solid darken(#2a9d8f, 15%);
     }
-
+    &.reset {
+      background-color: #61dafb;
+      color: #fff;
+      box-shadow: 0 4px 0 darken(#61dafb, 10%);
+      border: 1px solid darken(#61dafb, 15%);
+    }
     &:hover {
       transform: translateY(-2px);
     }
-
     &:active {
       transform: translateY(2px);
       box-shadow: none;
